@@ -1,0 +1,544 @@
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: "TTLakes", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1120px;
+  padding: 0 16px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.first__subtitle {
+  font-family: "TTLakes";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.7px;
+  margin-top: 23px;
+}
+
+.flex {
+  display: flex;
+}
+
+.page {
+  position: relative;
+  display: flex;
+  background-color: white;
+  height: 88px;
+}
+
+.page::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #d9fff5;
+  margin: 0;
+  padding: 0;
+}
+
+.page__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 320px;
+}
+
+.leftbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.rightbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.centerbar {
+  display: none;
+}
+
+.divider1 {
+  display: none;
+}
+
+.img__divider2 {
+  position: relative;
+  left: 19px;
+}
+
+.divider3 {
+  display: none;
+}
+
+.button1 {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 100%;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+  
+
+
+.logo {
+  width: 100px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.button3 {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+
+
+.button4 {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.button5 {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.button6 {
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 0;
+}
+
+
+.button7 {
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+.first {
+  background-color: #f8f8f8;
+  height: 509px;
+}
+
+.container__content {
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.highlight {
+  position: absolute;
+  left: 0;
+  top: 111px;
+}
+
+.sidemenu {
+  display: flex;
+  width: 100%; /* Использует всю доступную ширину контейнера */
+  overflow-x: hidden; /* Предотвращает выход за границы контейнера */
+  overflow-x: scroll;
+}
+.sidemenu ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.sidemenu li {
+  margin-right: 10px;
+}
+.buttonType {
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+  color: inherit; /* Наследуем цвет текста родительского элемента */
+  background-color: #f8f8f8; /* Фон кнопок */
+  border-radius: 5px; /* Скругленные углы */
+  padding: 8px 16px; /* Внутренний отступ */
+  transition: all 0.3s ease-in-out; /* Плавная анимация */
+  white-space: nowrap;
+  cursor: pointer;
+  border: 2px solid transparent;
+  margin-left: 10px;
+}
+
+.buttonType:hover {
+  background-color: white;
+  border: 2px solid;
+  border-color: #b8ffec;
+  border-radius: 5px;
+}
+
+.sidemenu__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.special-text {
+  display: none;
+}
+.special-text1 {
+  display: none;
+}
+
+.content__text {
+  position: relative;
+  margin-top: 6px;
+  max-height: 90px;
+  overflow: hidden;
+
+  font-family: "TTLakes", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+.content__text1 {
+  display: none;
+  position: relative;
+  margin-top: 6px;
+  max-height: 90px;
+  overflow: hidden;
+  font-family: "TTLakes", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.read-more {
+  background-color: transparent;
+  border: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  position: relative;
+  top: -17px;
+}
+.read-more:hover {
+   background-color: rgb(240, 235, 235);
+   border: 2px solid;
+   border-color: #b8ffec;
+   border-radius: 5px;
+  }
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -22px;
+  margin-left: 25px;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 13px;
+  margin-left: -5px;
+}
+
+.first__img {
+  height: auto;
+  width: 320px;
+  position: relative;
+  bottom: 18px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+  .page {
+    position: relative;
+    display: flex;
+    background-color: white;
+    height: 88px;
+  }
+
+  .leftbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 11px;
+  }
+  .logo {
+    margin-left: 3px;
+  }
+
+  .centerbar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 28px;
+    gap: 3px;
+  }
+
+  .divider1 {
+    margin-left: 6px;
+    display: flex;
+  }
+  .img__divider2 {
+    display: none;
+  }
+
+  .divider3 {
+    display: inline;
+    position: relative;
+    left: 13px;
+  }
+
+  .rightbar {
+    align-items: center;
+    padding-right: 16px;
+  }
+
+  .first__subtitle {
+    position: relative;
+  }
+  .sidemenu {
+    margin: 8px;
+    margin-bottom: 13px;
+  }
+
+  .special-text {
+    display: none;
+  }
+  .special-text1 {
+    display: none;
+  }
+
+  .container__content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .content {
+    margin: 0;
+    max-height: none;
+    margin-bottom: auto;
+  }
+
+  .content__text {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: "TTLakes", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    max-height: 152px;
+    overflow: hidden;
+  }
+  .content__text1 {
+    display: flex;
+    position: relative;
+    max-height: 46px;
+    overflow: hidden;
+    font-family: "TTLakes", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-top: auto;
+  }
+
+  .label {
+    letter-spacing: -0.3px;
+  }
+
+  .read-more {
+    background-color: transparent;
+    border: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    position: relative;
+    margin-top: 6px;
+  }
+  .first__img {
+    height: auto;
+    width: 369px;
+    border-radius: 8px;
+    margin-top: 19px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .leftbar {
+    display: none;
+  }
+  .centerbar {
+    display: none;
+  }
+
+  .page::after {
+    display: none;
+  }
+  .page {
+    background-color: #f8f8f8;
+  }
+
+  .rightbar {
+    gap: 11px;
+  }
+  .special-text {
+    display: flex;
+    position: relative;
+    left: 3px;
+    bottom: 2px;
+  }
+  .special-text1 {
+    display: flex;
+    position: relative;
+    left: 10px;
+    bottom: 2px;
+  }
+
+  .page__container {
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    padding-bottom: 2px;
+    padding-right: 15px;
+    background-color: #f8f8f8;
+  }
+  .button7 {
+    margin-left: 9px;
+  }
+  .first__subtitle {
+    margin-top: -46px;
+    margin-left: 10px;
+  }
+  .highlight {
+    margin-top: -70px;
+  }
+
+  .sidemenu ul {
+    display: flex;
+    width: 100%; /* Использует всю доступную ширину контейнера */
+    overflow-x: hidden; /* Предотвращает выход за границы контейнера */
+    font-family: "TTlakesM";
+    flex-wrap: wrap;
+    line-height: 45px;
+  }
+
+  .content {
+    position: relative;
+    margin-left: 11px;
+  }
+  .content__text {
+    width: 490px;
+    max-height: 160px;
+    font-family: "TTLakes", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .content__text1 {
+    position: relative;
+    width: 490px;
+    max-height: 160px;
+    font-family: "TTLakes", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    top: 3.2px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+  }
+
+  .read-more {
+    position: relative;
+    top: -5px;
+    border: 2px solid transparent;
+  }
+
+  .first__img {
+    position: relative;
+    right: 4px;
+    height: 307px;
+    width: 531px;
+    bottom: 8px;
+    margin: inherit;
+  }
+}
