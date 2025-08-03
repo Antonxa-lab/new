@@ -1,15 +1,12 @@
-
-
+/* верстка 1.3 */
 html {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -17,34 +14,30 @@ body {
   font-family: "TTLakes", sans-serif;
   font-weight: 400;
 }
-
 .container {
+  display: none;
+  /* display: flex; временно скрыл для 1.4*/
   max-width: 1120px;
   padding: 0 16px;
   margin: 0 auto;
   width: 100%;
 }
-
 ul {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
-
   list-style: none;
 }
-
 li {
   margin: 0;
   padding: 0;
 }
-
 p {
   margin: 0;
   padding: 0;
 }
-
 .first__subtitle {
   font-family: "TTLakes";
   font-weight: 700;
@@ -53,18 +46,16 @@ p {
   letter-spacing: -0.7px;
   margin-top: 23px;
 }
-
 .flex {
   display: flex;
 }
-
 .page {
   position: relative;
-  display: flex;
+  display: none;
+  /* display: flex;временно скрыл для 1.4 */
   background-color: white;
   height: 88px;
 }
-
 .page::after {
   content: "";
   position: absolute;
@@ -75,14 +66,12 @@ p {
   margin: 0;
   padding: 0;
 }
-
 .page__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-width: 320px;
 }
-
 .leftbar {
   display: flex;
   justify-content: space-between;
@@ -91,7 +80,6 @@ p {
   margin: 0;
   list-style-type: none;
 }
-
 .rightbar {
   display: flex;
   justify-content: space-around;
@@ -101,26 +89,20 @@ p {
   margin: 0;
   list-style-type: none;
 }
-
 .centerbar {
   display: none;
 }
-
 .divider1 {
   display: none;
 }
-
 .img__divider2 {
   position: relative;
   left: 19px;
 }
-
 .divider3 {
   display: none;
 }
-
-.button1 {
-  background-color: transparent;
+.button {
   width: 40px;
   height: 40px;
   border: none;
@@ -129,10 +111,6 @@ p {
   cursor: pointer;
   padding: 0;
 }
-
-  
-
-
 .logo {
   width: 100px;
   height: 50px;
@@ -141,77 +119,24 @@ p {
   background-color: transparent;
   margin-left: 10px;
 }
-
-.button3 {
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-
-
-.button4 {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-
-.button5 {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-
-.button6 {
-  width: 40px;
-  height: 40px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-  margin-right: 10px;
-  padding: 0;
-}
-
-
-.button7 {
-  width: 40px;
-  height: 40px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-}
-
-
 .first {
   background-color: #f8f8f8;
   height: 509px;
 }
-
 .container__content {
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
-
 .title {
   display: flex;
   align-items: center;
 }
-
 .highlight {
   position: absolute;
   left: 0;
   top: 111px;
 }
-
 .sidemenu {
   display: flex;
   width: 100%; /* Использует всю доступную ширину контейнера */
@@ -239,31 +164,26 @@ p {
   border: 2px solid transparent;
   margin-left: 10px;
 }
-
 .buttonType:hover {
   background-color: white;
   border: 2px solid;
   border-color: #b8ffec;
   border-radius: 5px;
 }
-
 .sidemenu__scroll::-webkit-scrollbar {
   display: none;
 }
-
 .special-text {
   display: none;
 }
 .special-text1 {
   display: none;
 }
-
 .content__text {
   position: relative;
   margin-top: 6px;
   max-height: 90px;
   overflow: hidden;
-
   font-family: "TTLakes", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -282,7 +202,6 @@ p {
   line-height: 18px;
   letter-spacing: 0.2px;
 }
-
 .read-more {
   background-color: transparent;
   border: none;
@@ -294,12 +213,11 @@ p {
   top: -17px;
 }
 .read-more:hover {
-   background-color: rgb(240, 235, 235);
-   border: 2px solid;
-   border-color: #b8ffec;
-   border-radius: 5px;
-  }
-
+  background-color: rgb(240, 235, 235);
+  border: 2px solid;
+  border-color: #b8ffec;
+  border-radius: 5px;
+}
 .label {
   display: flex;
   justify-content: center;
@@ -307,7 +225,6 @@ p {
   margin-top: -22px;
   margin-left: 25px;
 }
-
 .icon {
   display: flex;
   justify-content: space-between;
@@ -315,25 +232,24 @@ p {
   margin-top: 13px;
   margin-left: -5px;
 }
-
 .first__img {
   height: auto;
-  width: 320px;
   position: relative;
   bottom: 18px;
 }
 
 @media (min-width: 768px) {
   .container {
+    display: none; /*временно для 1.4 */
     padding: 0 24px;
   }
   .page {
+     display: none; /*временно для 1.4 */
     position: relative;
-    display: flex;
+    /* display: flex; */
     background-color: white;
     height: 88px;
   }
-
   .leftbar {
     justify-content: space-between;
     align-items: center;
@@ -343,15 +259,13 @@ p {
   .logo {
     margin-left: 3px;
   }
-
   .centerbar {
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: 28px;
-    gap: 3px;
+    gap: 10px;
   }
-
   .divider1 {
     margin-left: 6px;
     display: flex;
@@ -359,18 +273,15 @@ p {
   .img__divider2 {
     display: none;
   }
-
   .divider3 {
     display: inline;
     position: relative;
     left: 13px;
   }
-
   .rightbar {
     align-items: center;
-    padding-right: 16px;
+    gap: 15px;
   }
-
   .first__subtitle {
     position: relative;
   }
@@ -378,26 +289,22 @@ p {
     margin: 8px;
     margin-bottom: 13px;
   }
-
   .special-text {
     display: none;
   }
   .special-text1 {
     display: none;
   }
-
   .container__content {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
   }
-
   .content {
     margin: 0;
     max-height: none;
     margin-bottom: auto;
   }
-
   .content__text {
     display: flex;
     margin: 0;
@@ -422,11 +329,9 @@ p {
     letter-spacing: 0.2px;
     margin-top: auto;
   }
-
   .label {
     letter-spacing: -0.3px;
   }
-
   .read-more {
     background-color: transparent;
     border: none;
@@ -439,7 +344,6 @@ p {
   }
   .first__img {
     height: auto;
-    width: 369px;
     border-radius: 8px;
     margin-top: 19px;
   }
@@ -452,14 +356,12 @@ p {
   .centerbar {
     display: none;
   }
-
   .page::after {
     display: none;
   }
   .page {
     background-color: #f8f8f8;
   }
-
   .rightbar {
     gap: 11px;
   }
@@ -475,27 +377,22 @@ p {
     left: 10px;
     bottom: 2px;
   }
-
-  .page__container {
-    display: flex;
+ .page__container {
+    /* display: flex; */
     justify-content: right;
     align-items: end;
     padding-bottom: 2px;
     padding-right: 15px;
     background-color: #f8f8f8;
   }
-  .button7 {
-    margin-left: 9px;
-  }
-  .first__subtitle {
+ .first__subtitle {
     margin-top: -46px;
     margin-left: 10px;
   }
   .highlight {
     margin-top: -70px;
   }
-
-  .sidemenu ul {
+ .sidemenu ul {
     display: flex;
     width: 100%; /* Использует всю доступную ширину контейнера */
     overflow-x: hidden; /* Предотвращает выход за границы контейнера */
@@ -503,8 +400,7 @@ p {
     flex-wrap: wrap;
     line-height: 45px;
   }
-
-  .content {
+ .content {
     position: relative;
     margin-left: 11px;
   }
@@ -526,14 +422,12 @@ p {
     letter-spacing: 0.2px;
     line-height: 20px;
   }
-
-  .read-more {
+ .read-more {
     position: relative;
     top: -5px;
     border: 2px solid transparent;
   }
-
-  .first__img {
+.first__img {
     position: relative;
     right: 4px;
     height: 307px;
@@ -541,4 +435,81 @@ p {
     bottom: 8px;
     margin: inherit;
   }
+}
+
+/* верстка 1.4 */
+.aside {
+  width: 320px;
+  background-color: white;
+  height: 1024px;
+  box-shadow: 16px 0px 52px 0px gray;
+}
+.main {
+  height: 800px;
+}
+.first {
+  background-color: white;
+  height: 1024px;
+}
+.leftbar {
+  display: flex;
+  padding: 0px 15px;
+  max-width: 320px;
+  padding-top: 10px;
+}
+.logo {
+  position: relative;
+  right: 35px;
+}
+.sidemenu ul {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.buttonType {
+  background-color: white;
+}
+.buttons-list {
+  display: flex;
+  gap: 16px;
+  padding-left: 20px;
+}
+/* Стили кнопок */
+.button {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.button:hover {
+  box-shadow: 0 4px 8px blueviolet;
+}
+.contacts {
+  padding-left: 20px;
+  line-height: normal;
+}
+.email-link{
+  color:black;
+  transition: color 0.3s ease-in-out;
+}
+.email-link:hover {
+  color: #ffd700;
+}
+.number {
+  font-size: 24px;
+  font-weight: bold;
+}
+.lang-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  transition: color 0.3s ease-in-out;
+}
+/* Ховер эффект для языков */
+.lang-link:hover {
+  color: #ffd700;
 }
