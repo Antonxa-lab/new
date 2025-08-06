@@ -438,7 +438,7 @@ p {
 }
 
 /* верстка 1.4 */
-.aside {
+ .aside {
   width: 320px;
   background-color: white;
   height: 1024px;
@@ -538,4 +538,4 @@ p {
 /* Ховер эффект для языков */
 .language-switcher__link:hover {
   color: #ffd700;
-}
+}  
