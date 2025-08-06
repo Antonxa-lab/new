@@ -244,7 +244,7 @@ p {
     padding: 0 24px;
   }
   .page {
-     display: none; /*временно для 1.4 */
+    display: none; /*временно для 1.4 */
     position: relative;
     /* display: flex; */
     background-color: white;
@@ -377,7 +377,7 @@ p {
     left: 10px;
     bottom: 2px;
   }
- .page__container {
+  .page__container {
     /* display: flex; */
     justify-content: right;
     align-items: end;
@@ -385,14 +385,14 @@ p {
     padding-right: 15px;
     background-color: #f8f8f8;
   }
- .first__subtitle {
+  .first__subtitle {
     margin-top: -46px;
     margin-left: 10px;
   }
   .highlight {
     margin-top: -70px;
   }
- .sidemenu ul {
+  .sidemenu ul {
     display: flex;
     width: 100%; /* Использует всю доступную ширину контейнера */
     overflow-x: hidden; /* Предотвращает выход за границы контейнера */
@@ -400,7 +400,7 @@ p {
     flex-wrap: wrap;
     line-height: 45px;
   }
- .content {
+  .content {
     position: relative;
     margin-left: 11px;
   }
@@ -422,12 +422,12 @@ p {
     letter-spacing: 0.2px;
     line-height: 20px;
   }
- .read-more {
+  .read-more {
     position: relative;
     top: -5px;
     border: 2px solid transparent;
   }
-.first__img {
+  .first__img {
     position: relative;
     right: 4px;
     height: 307px;
@@ -461,7 +461,10 @@ p {
   position: relative;
   right: 35px;
 }
-.sidemenu ul {
+.sidemenu {
+  margin-top: 30px;
+}
+.navigation {
   display: flex;
   gap: 30px;
   flex-direction: column;
@@ -470,10 +473,17 @@ p {
 .buttonType {
   background-color: white;
 }
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+}
 .buttons-list {
   display: flex;
   gap: 16px;
   padding-left: 20px;
+  margin-top: auto;
 }
 /* Стили кнопок */
 .button {
@@ -491,25 +501,41 @@ p {
   padding-left: 20px;
   line-height: normal;
 }
-.email-link{
-  color:black;
+.email-link {
+  color: black;
   transition: color 0.3s ease-in-out;
+  text-decoration: none;
 }
 .email-link:hover {
   color: #ffd700;
 }
-.number {
+.phone-number {
   font-size: 24px;
   font-weight: bold;
-}
-.lang-link {
   color: black;
   text-decoration: none;
-  font-weight: 500;
-  letter-spacing: 0.2px;
+  transition: color 0.3s ease-in-out;
+}
+.phone-number:hover {
+  color: #ffd700;
+}
+.language-switcher {
+  display: block;
+}
+.language-switcher__list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+}
+.language-switcher__item {
+  margin-right: 10px;
+}
+.language-switcher__link {
+  color: inherit;
+  text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 /* Ховер эффект для языков */
-.lang-link:hover {
+.language-switcher__link:hover {
   color: #ffd700;
 }
