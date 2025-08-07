@@ -1,1 +1,1 @@
-https://new-eta-ashen.vercel.app/
+https://antonxa-lab.github.io/new/
